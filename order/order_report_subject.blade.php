@@ -1,0 +1,1 @@
+Новый заказ на сайте {{ evo()->getConfig("site_name") }}

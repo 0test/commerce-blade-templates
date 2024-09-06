@@ -1,0 +1,3 @@
+<td>
+{{ $data['value'] }}
+</td>
