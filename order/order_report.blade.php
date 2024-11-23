@@ -4,8 +4,8 @@
 
 <p>
 	{{ $data['order']['name'] }}, {{ $data['order']['email'] }}, {{ $data['order']['phone'] }}, {{ $data['order']['fields']['address'] }}<br>
-	Способ доставки: {{ $data['order']['fields']['delivery_method_title'] }}<br>
-	Способ оплаты: {{ $data['order']['fields']['payment_method_title'] }}
+	Способ доставки: {{ $data['order']['fields']['delivery_method_title'] ?? '' }}<br>
+	Способ оплаты: {{ $data['order']['fields']['payment_method_title'] ?? '' }}
 </p>
 
 <h4>Состав заказа:</h4>
