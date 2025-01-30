@@ -7,8 +7,8 @@
 <h4>Данные покупателя:</h4>
 
 <p>
-	Способ доставки: {{ $data['order']['fields']['delivery_method_title'] }}<br>
-	Способ оплаты: {{ $data['order']['fields']['payment_method_title'] }}
+	Способ доставки: {{ $data['order']['fields']['delivery_method_title'] ?? '' }}<br>
+	Способ оплаты: {{ $data['order']['fields']['payment_method_title'] ?? '' }}
 </p>
 
 {{ $data['extra'] ?? '' }}
